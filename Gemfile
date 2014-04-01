@@ -32,6 +32,9 @@ gem 'compass-rails'
 # Deploy
 gem 'rails_12factor'
 
+# Resources
+gem 'inherited_resources'
+
 group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
