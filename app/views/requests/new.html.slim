@@ -1,4 +1,35 @@
 .slide-1
+  .row
+    .wraper= image_tag("meurio-eu-faco.png", class: "meurio-eu-faco")
+  .row
+    .step
+      = image_tag("step-1.png")
+      span
+        | Você contribui com
+        br
+        | a Rede Meu Rio
+    .step
+      = image_tag("step-2.png")
+      span
+        | Nossas vitórias ajudam a
+        br
+        | construir uma cidade melhor
+    .step
+      = image_tag("step-3.png")
+      span
+        | A cidade festeja a
+        br
+        | sua participação!
+  .row
+    .wraper.medium
+      form
+        .row
+          .disclaimer
+            | Já é nosso financiador ou conquistou a medalha "Eu Faço!"?
+            br
+            | Solicite agora mesmo a sua carteirinha e seja celebrado!
+          .call-to-action
+            = link_to "Solicitar carteirinha", "#", class: [:button, :radius]
 
 .slide-2
   .row
