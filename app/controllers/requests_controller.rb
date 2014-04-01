@@ -4,8 +4,8 @@ class RequestsController < InheritedResources::Base
     params[:ip] = request.remote_ip
     request = Request.create_from_user(request_params)
 
-    RequestMailer.we_received_your_request(request)
-    RequestMailer.membership_card_requested(request)
+    RequestMailer.delay.we_received_your_request(request)
+    RequestMailer.delay.membership_card_requested(request)
 
     redirect_to root_path
   end

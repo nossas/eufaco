@@ -33,8 +33,9 @@ gem 'compass-rails'
 gem 'rails_12factor'
 
 # Resources
-gem 'inherited_resources'
+gem 'delayed_job_active_record'
 gem 'httparty'
+gem 'inherited_resources'
 
 group :test do
   gem 'cucumber-rails', require: false
