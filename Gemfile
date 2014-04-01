@@ -42,6 +42,7 @@ gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'slim-rails'
 gem 'foundation-rails'
+gem 'compass-rails'
 
 group :test do
   gem 'cucumber-rails', :require => false
