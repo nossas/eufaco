@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'slim-rails'
+gem 'foundation-rails'
 
 group :test do
   gem 'cucumber-rails', :require => false
