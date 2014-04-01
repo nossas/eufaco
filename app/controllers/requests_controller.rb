@@ -3,6 +3,10 @@ class RequestsController < InheritedResources::Base
   def create
     params[:ip] = request.remote_ip
     request = Request.create_from_user(request_params)
+
+    RequestMailer.we_received_your_request(request)
+    RequestMailer.membership_card_requested(request)
+
     redirect_to root_path
   end
 
