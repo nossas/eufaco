@@ -40,3 +40,8 @@ gem 'spring',        group: :development
 
 gem 'rails_12factor'
 gem 'newrelic_rpm'
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+end
