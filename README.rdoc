@@ -1,4 +1,5 @@
 {<img src="https://travis-ci.org/meurio/eufaco.svg" alt="Build Status" />}[https://travis-ci.org/meurio/eufaco]
+{<img src="https://codeclimate.com/github/meurio/eufaco.png" />}[https://codeclimate.com/github/meurio/eufaco]
 
 == README
 
