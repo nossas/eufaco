@@ -6,7 +6,7 @@ body
   font-family: "Proxima Nova Soft"
   text-align: center
 
-div[class^="slide-"]
+[class^="slide-"]
   padding: 2em 0
 
 .wraper
@@ -15,7 +15,7 @@ div[class^="slide-"]
     +grid-column(12, true, true)
 
 .slide-1
-  background: #046930
+  background: image-url("slide-1-bg.png") center bottom repeat-x #046930
   color: #A8CB70
   img.meurio-eu-faco
     margin-bottom: 3em
@@ -61,7 +61,8 @@ div[class^="slide-"]
 
 
 .slide-2
-  background: #EDECED
+  background: image-url("slide-2-bg.png") center bottom repeat-x #EDECED
+  padding-bottom: 162px + 20px
   h2
     color: #2E3235
   p
@@ -75,8 +76,11 @@ div[class^="slide-"]
     color: white
   .multitude, .faca-acontecer
     +grid-column(6)
-    img
+    .image
+      background: white
       margin-bottom: 1em
+      +border-radius(2px)
+      padding: 3em
     a.button
       display: block
 
