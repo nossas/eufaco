@@ -15,10 +15,10 @@ function initialize() {
       icon: iconBase + $("#map_canvas").data('pin-calendar')
     },
     presente: {
-      icon: iconBase + $("#map_canvas").data('pin-gift.png')
+      icon: iconBase + $("#map_canvas").data('pin-gift')
     },
     info: {
-      icon: iconBase + $("#map_canvas").data('pin-pins.png')
+      icon: iconBase + $("#map_canvas").data('pin-pins')
     }
   };
 
