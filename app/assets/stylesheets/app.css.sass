@@ -5,8 +5,10 @@ body
   font-family: "Proxima Nova Soft"
   text-align: center
 
-.wraper
+div[class^="slide-"]
   padding: 2em 0
+
+.wraper
   +grid-column(12)
 
 .slide-2
@@ -15,3 +17,16 @@ body
     color: #2E3235
   p
     color: #738793
+
+.slide-3
+  background: #2E3235
+  h2
+    color: #738793
+  p
+    color: white
+  .multitude, .faca-acontecer
+    +grid-column(6)
+    img
+      margin-bottom: 1em
+    a.button
+      display: block
