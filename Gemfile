@@ -34,6 +34,7 @@ gem 'rails_12factor'
 
 # Resources
 gem 'inherited_resources'
+gem 'httparty'
 
 group :test do
   gem 'cucumber-rails', require: false
