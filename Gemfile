@@ -27,6 +27,7 @@ gem 'newrelic_rpm'
 # Layout
 gem 'slim-rails'
 gem 'foundation-rails'
+gem 'compass-rails'
 
 # Deploy
 gem 'rails_12factor'
