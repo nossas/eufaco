@@ -34,6 +34,7 @@ gem 'rails_12factor'
 
 # Resources
 gem 'delayed_job_active_record'
+gem 'gibbon'
 gem 'httparty'
 gem 'inherited_resources'
 
