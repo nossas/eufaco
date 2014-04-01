@@ -10,6 +10,5 @@ def to_element string
   return ".slide-4" if string == "the fourth slide"
   return ".slide-5" if string == "the fifth slide"
   return ".slide-6" if string == "the sixth slide"
-  return ".slide-7" if string == "the seventh slide"
   raise "I don't know element '#{string}'"
 end
