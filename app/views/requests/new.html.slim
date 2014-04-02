@@ -95,15 +95,19 @@
       - if notice
         .successful-contact= notice
       - else
-        = form_tag contact_requests_path, {id: "contact-form"}
-          = label_tag "contact_name", "Nome"
-          = text_field_tag "contact_name"
-          = label_tag "contact_email", "Email"
-          = text_field_tag "contact_email"
-          = label_tag "contact_subject", "Assunto"
-          = text_field_tag "contact_subject"
-          = label_tag "contact_message", "Mensagem"
-          = text_area_tag "contact_message"
+        = form_tag contact_requests_path, {id: "contact-form", "data-abide" => true}
+          .contact-name-field
+            = label_tag "contact_name", "Nome"
+            = text_field_tag "contact_name", nil, required: true
+          .contact-email-field
+            = label_tag "contact_email", "Email"
+            = text_field_tag "contact_email", nil, required: true, pattern: "email"
+          .contact-subject-field
+            = label_tag "contact_subject", "Assunto"
+            = text_field_tag "contact_subject", nil, required: true
+          .contact-message-field
+            = label_tag "contact_message", "Mensagem"
+            = text_area_tag "contact_message", nil, required: true
           = submit_tag "Enviar mensagem", id: "contact-submit-button", class: [:button, :radius]
 
 #share.medium.reveal-modal{data-reveal}

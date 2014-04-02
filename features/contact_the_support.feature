@@ -12,4 +12,11 @@ Feature: contact the support
     And I should see "the successful contact message"
     And an email should be sent
 
+  @javascript
   Scenario: "when the contact form is wrong"
+    Given I go to "the homepage"
+    When I press "the contact form submit button"
+    Then I should see "the contact name field error"
+    And I should see "the contact email field error"
+    And I should see "the contact subject field error"
+    And I should see "the contact message field error"

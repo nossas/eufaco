@@ -14,6 +14,10 @@ def to_element string
   return ".email_field.error" if string == "the email field with error"
   return "#contact-form" if string == "the contact form"
   return ".successful-contact" if string == "the successful contact message"
+  return ".contact-name-field.error" if string == "the contact name field error"
+  return ".contact-email-field.error" if string == "the contact email field error"
+  return ".contact-subject-field.error" if string == "the contact subject field error"
+  return ".contact-message-field.error" if string == "the contact message field error"
   raise "I don't know element '#{string}'"
 end
 
