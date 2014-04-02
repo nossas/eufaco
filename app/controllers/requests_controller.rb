@@ -7,7 +7,7 @@ class RequestsController < InheritedResources::Base
     RequestMailer.delay.we_received_your_request(request)
     RequestMailer.delay.membership_card_requested(request)
 
-    redirect_to root_path
+    redirect_to root_path(anchor: "share")
   end
 
   def contact
