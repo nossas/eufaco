@@ -45,6 +45,6 @@ end
 
 def to_subject string
   return "Meu Rio - Vamos Festejar!" if string == "we received your request"
-  return "Carteirinha solicitada" if string == "membership card requested"
+  return "Meu Rio Eu Faço - Solicitação de Carteirinha!" if string == "membership card requested"
   raise "I don't know subject '#{string}'"
 end
