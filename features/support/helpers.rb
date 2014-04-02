@@ -32,3 +32,8 @@ def to_link string
   return "request-membership-card-button" if string == "the request membership card button"
   raise "I don't know '#{string}'"
 end
+
+def to_subject string
+  return "Meu Rio - Vamos Festejar!" if string == "we received your request"
+  return "Carteirinha solicitada" if string == "membership card requested"
+end

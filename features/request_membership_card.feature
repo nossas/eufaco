@@ -9,8 +9,6 @@ Feature: request membership card
     And I fill in "the email field" with "josias@meurio.org.br"
     When I press "the request form submit button"
     Then I should be in "the homepage"
-    # And an email called "we received your request" should be sent
-    # And an email called "a membership card was requested" should be sent
 
   @javascript
   Scenario: when I don't fill the form correctly
