@@ -2,6 +2,9 @@
 @import fonts
 @import compass
 
+$facebook-blue: #3d5a9b
+$twitter-blue: #25bce8
+
 body
   font-family: "Proxima Nova Soft"
   text-align: center
@@ -111,6 +114,22 @@ body
   #map_canvas
     height: 500px
 
+#share
+  .button
+    text-transform: uppercase
+    +border-radius(3px)
+    margin: .5em
+    
+    &.facebook-share
+      background: $facebook-blue
+    &.twitter-share
+      background: $twitter-blue
+
+@media (max-width: 1240px)
+  #share
+    .button
+      +grid-column(8, $center: true)
+
 @media (max-width: 930px)
   .slide-1
     form
@@ -119,6 +138,9 @@ body
       .disclaimer
         text-align: center
         margin-bottom: 1em
+  #share
+    .button
+      +grid-column(12)
 
 @media (max-width: 630px)
   .slide-1

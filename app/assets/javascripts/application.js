@@ -23,6 +23,24 @@ $(function(){
     $(window.location.hash).foundation('reveal', 'open');
   }
 
+  $(".button.facebook-share").click(function(event){
+    window.open(
+      $(event.target).attr("href"),
+      'facebox-share-dialog',
+      'width=626,height=436'
+    );
+    return false;
+  });
+
+  $(".button.twitter-share").click(function(event){
+    window.open(
+      $(event.target).attr("href"),
+      'twitter-share-dialog',
+      'width=626,height=436'
+    );
+    return false;
+  });
+
   $('#request-membership-card-button').on('click', function(e) {
     $('form#new_request').toggle('slow');
     e.preventDefault();
