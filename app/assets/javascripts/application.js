@@ -16,8 +16,12 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ 
-  $(document).foundation(); 
+$(function(){
+  $(document).foundation();
+
+  if(window.location.hash){
+    $(window.location.hash).foundation('reveal', 'open');
+  }
 
   $('#request-membership-card-button').on('click', function(e) {
     $('form#new_request').toggle('slow');

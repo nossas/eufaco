@@ -7,4 +7,3 @@ Feature: read about the project
     And I should see "the third slide"
     And I should see "the fourth slide"
     And I should see "the fifth slide"
-    And I should see "the sixth slide"

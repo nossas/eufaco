@@ -9,7 +9,6 @@ def to_element string
   return ".slide-3" if string == "the third slide"
   return ".slide-4" if string == "the fourth slide"
   return ".slide-5" if string == "the fifth slide"
-  return ".slide-6" if string == "the sixth slide"
   return ".first_name_field.error" if string == "the first name field with error"
   return ".last_name_field.error" if string == "the last name field with error"
   return ".email_field.error" if string == "the email field with error"
