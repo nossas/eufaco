@@ -10,6 +10,6 @@ Feature: contact the support
     Then I should be in "the homepage"
     And I should not see "the contact form"
     And I should see "the successful contact message"
-    And an email called "contact" should be sent
+    And an email should be sent
 
   Scenario: "when the contact form is wrong"
