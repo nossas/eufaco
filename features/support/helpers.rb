@@ -34,6 +34,6 @@ def to_link string
 end
 
 def to_subject string
-  return "Recebemos sua solicitação!" if string == "we received your request"
+  return "Meu Rio - Vamos Festejar!" if string == "we received your request"
   return "Carteirinha solicitada" if string == "membership card requested"
 end

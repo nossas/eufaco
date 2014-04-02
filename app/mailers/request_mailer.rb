@@ -4,7 +4,7 @@ class RequestMailer < ActionMailer::Base
   def we_received_your_request request
     @user = request.user
     headers["X-MC-Tags"] = "eufaco,we_received_your_request"
-    mail(to: @user.email, subject: "Recebemos sua solicitação!")
+    mail(to: @user.email, subject: "Meu Rio - Vamos Festejar!")
   end
 
   def membership_card_requested request
