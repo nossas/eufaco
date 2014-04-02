@@ -87,6 +87,29 @@
     .wraper
       #map_canvas{data-pin-coin=image_url("pin-coin.png") data-pin-calendar=image_url("pin-calendar.png") data-pin-gift=image_url("pin-gift.png") data-pin-pins=image_url("pin-pins.png")}
 
+.slide-6#contact
+  .row
+    .wraper
+      h2 Entre em contato
+      p Quer saber mais? Quer nos ajudar a celebrar nossa rede? É só dar um alô!
+      - if notice
+        .successful-contact= notice
+      - else
+        = form_tag contact_requests_path, {id: "contact-form", "data-abide" => true}
+          .contact-name-field
+            = label_tag "contact_name", "Nome"
+            = text_field_tag "contact_name", nil, required: true
+          .contact-email-field
+            = label_tag "contact_email", "Email"
+            = text_field_tag "contact_email", nil, required: true, pattern: "email"
+          .contact-subject-field
+            = label_tag "contact_subject", "Assunto"
+            = text_field_tag "contact_subject", nil, required: true
+          .contact-message-field
+            = label_tag "contact_message", "Mensagem"
+            = text_area_tag "contact_message", nil, required: true
+          = submit_tag "Enviar mensagem", id: "contact-submit-button", class: [:button, :radius]
+
 #share.medium.reveal-modal{data-reveal}
   p.lead Recebemos seu cadastro!
   p Em até 5 dias úteis, enviaremos a sua carteirinha para que você possa desfrutar das celebrações da nossa Rede.
