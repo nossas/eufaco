@@ -89,16 +89,22 @@
 
 .slide-6#contact
   .row
-    .wraper.medium
+    .wraper
+      h2 Entre em contato
+      p Quer saber mais? Quer nos ajudar a celebrar nossa rede? É só dar um alô!
       - if notice
         .successful-contact= notice
       - else
         = form_tag contact_requests_path, {id: "contact-form"}
+          = label_tag "contact_name", "Nome"
           = text_field_tag "contact_name"
+          = label_tag "contact_email", "Email"
           = text_field_tag "contact_email"
+          = label_tag "contact_subject", "Assunto"
           = text_field_tag "contact_subject"
-          = text_field_tag "contact_message"
-          = submit_tag "Enviar mensagem", id: "contact-submit-button"
+          = label_tag "contact_message", "Mensagem"
+          = text_area_tag "contact_message"
+          = submit_tag "Enviar mensagem", id: "contact-submit-button", class: [:button, :radius]
 
 #share.medium.reveal-modal{data-reveal}
   p.lead Recebemos seu cadastro!

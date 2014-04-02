@@ -19,7 +19,7 @@
 $(function(){
   $(document).foundation();
 
-  if(window.location.hash){
+  if(window.location.hash == "#share"){
     $(window.location.hash).foundation('reveal', 'open');
   }
 
