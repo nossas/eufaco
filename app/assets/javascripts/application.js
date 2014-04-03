@@ -40,9 +40,4 @@ $(function(){
     );
     return false;
   });
-
-  $('#request-membership-card-button').on('click', function(e) {
-    $('form#new_request').toggle('slow');
-    e.preventDefault();
-  });
 });

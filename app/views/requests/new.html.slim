@@ -28,19 +28,16 @@
             | Já é nosso financiador ou conquistou a medalha "Eu Faço!"?
             br
             | Solicite agora mesmo a sua carteirinha e seja celebrado!
-          .call-to-action
-            = link_to "Solicitar carteirinha", "#", id: 'request-membership-card-button', class: [:button, :radius]
-
         = form_for @request, html: { "data-abide" => true } do |form|
           .row
             .first_name_field
-              = text_field_tag :first_name, nil, placeholder: "Insira seu primeiro nome", required: true
+              = text_field_tag :first_name, nil, placeholder: "Nome", required: true
             .last_name_field
-              = text_field_tag :last_name, nil, placeholder: "Insira seu sobrenome", required: true
+              = text_field_tag :last_name, nil, placeholder: "Sobrenome", required: true
             .email_field
-              = email_field_tag :email, nil, placeholder: "Insira seu email", required: true
+              = email_field_tag :email, nil, placeholder: "Email", required: true
             .submit_button
-              = form.submit "Enviar solicitação", id: 'request-submit-button', class: [:button, :radius]
+              = form.submit "Solicitar Carteirinha", id: 'request-submit-button', class: [:button, :radius]
 
 .slide-2
   .row

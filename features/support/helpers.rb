@@ -39,7 +39,6 @@ def to_button string
 end
 
 def to_link string
-  return "request-membership-card-button" if string == "the request membership card button"
   raise "I don't know '#{string}'"
 end
 
