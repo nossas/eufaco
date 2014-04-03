@@ -118,12 +118,14 @@ body
       [class^="icon-"]
         position: absolute
         top: 20px
-        opacity: 0.8
+        opacity: 0.9
+        +border-radius(50%)
         &.icon-1
           right: 80px
         &.icon-2
           right: 20px
         &:hover
+          +box-shadow(0 0 10px rgba(0,0,0,0.5))
           opacity: 1.0
 
     .text
