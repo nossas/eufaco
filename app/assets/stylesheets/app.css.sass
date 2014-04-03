@@ -112,8 +112,20 @@ body
     +grid-column(4)
     text-align: left
     margin-bottom: 1em
-    img
+    .image-wraper
       +border-radius(3px 3px 0 0)
+      position: relative
+      [class^="icon-"]
+        position: absolute
+        top: 20px
+        opacity: 0.8
+        &.icon-1
+          right: 80px
+        &.icon-2
+          right: 20px
+        &:hover
+          opacity: 1.0
+
     .text
       +border-radius(0 0 3px 3px)
       background: white
