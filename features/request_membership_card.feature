@@ -8,6 +8,7 @@ Feature: request membership card
     And I fill in "the email field" with "josias@meurio.org.br"
     When I press "the request form submit button"
     Then I should be in "the homepage"
+    And 2 emails should be sent
 
   @javascript
   Scenario: when I don't fill the form correctly
