@@ -112,12 +112,14 @@
 
 .slide-6#contact
   .row
-    .wraper
-      h2 Entre em contato
-      p Quer saber mais? Quer nos ajudar a celebrar nossa rede? É só dar um alô!
-      - if notice
-        .successful-contact= notice
-      - else
+    - if notice
+      .successful-contact
+        = image_tag('icon-letter.png')
+        h2= notice
+    - else
+      .wraper
+        h2 Entre em contato
+        p Quer saber mais? Quer nos ajudar a celebrar nossa rede? É só dar um alô!
         = form_tag contact_requests_path, {id: "contact-form", "data-abide" => true}
           .contact-name-field
             = label_tag "contact_name", "Nome"

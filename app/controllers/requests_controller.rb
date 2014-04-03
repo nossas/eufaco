@@ -12,7 +12,7 @@ class RequestsController < InheritedResources::Base
 
   def contact
     RequestMailer.delay.contact(params)
-    redirect_to root_path(anchor: "contact"), notice: "Recebemos o seu contato, por favor aguarde que retornaremos a sua mensagem."
+    redirect_to root_path(anchor: "contact"), notice: "Obrigado por entrar em contato! Vamos ler e retornar a sua mensagem o mais breve possível, OK?"
   end
 
   private
