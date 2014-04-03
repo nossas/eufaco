@@ -18,7 +18,7 @@ body
     +grid-column(12, true, true)
 
 .slide-1
-  background: image-url("bg-slide-01.jpg") center top repeat-x #046930
+  background: image-url("bg-slide-01.jpg") center top #046930
   color: #A8CB70
   img.meurio-eu-faco
     margin-bottom: 3em
@@ -64,12 +64,16 @@ body
 
 
 .slide-2
-  background: image-url("slide-2-bg.png") center bottom repeat-x #EDECED
-  padding-bottom: 162px + 20px
-  h2
-    color: #2E3235
+  background: image-url("bg-slide-02.jpg") center top #EDECED
+  .wraper
+    +grid-column(9, $center: true)
+    padding: 4em 0
+  h2, p
+    color: white
   p
-    color: #738793
+    line-height: 1.3em
+    font-weight: 500
+    font-size: 1em
 
 .slide-3
   background: #2E3235
