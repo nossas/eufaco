@@ -6,6 +6,7 @@ $facebook-blue: #3d5a9b
 $twitter-blue: #25bce8
 $bg-green-1: #007534
 $bg-green-2: #8fca43
+$dark: #2e3235
 
 body
   font-family: "Proxima Nova Soft"
@@ -37,7 +38,7 @@ body
       line-height: 1.2em
   .form-wraper
     padding: 1em
-    background: #2E3235
+    background: $dark
     color: white
     +border-radius(4px)
 
@@ -79,7 +80,7 @@ body
     font-size: 1em
 
 .slide-3
-  background: #2E3235
+  background: $dark
   h2
     color: #738793
   p
@@ -101,19 +102,22 @@ body
 
 .slide-4
   background: image-url("bg-slide-04.jpg") center top $bg-green-1
-  h2, h3
+  h2
     color: white
   h3
+    color: $dark
     font-size: 1.2em
     font-weight: bold
   .celebration
-    text-align: left
     +grid-column(4)
+    text-align: left
     margin-bottom: 1em
+    img
+      +border-radius(3px 3px 0 0)
     .text
+      +border-radius(0 0 3px 3px)
       background: white
       padding: 1em
-      +border-radius(0 0 2px 2px)
       .description
         font-size: .7em
         color: #738793
@@ -127,7 +131,7 @@ body
   background: #EDECED
   padding-bottom: 8em
   h2
-    color: #2E3235
+    color: $dark
   p
     color: #738793
   .wraper
