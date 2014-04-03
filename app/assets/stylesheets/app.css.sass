@@ -4,6 +4,8 @@
 
 $facebook-blue: #3d5a9b
 $twitter-blue: #25bce8
+$bg-green-1: #007534
+$bg-green-2: #8fca43
 
 body
   font-family: "Proxima Nova Soft"
@@ -18,7 +20,7 @@ body
     +grid-column(12, true, true)
 
 .slide-1
-  background: image-url("bg-slide-01.jpg") center top #046930
+  background: image-url("bg-slide-01.jpg") center top $bg-green-1
   padding-bottom: 1em
   color: #A8CB70
   img.meurio-eu-faco
@@ -65,7 +67,7 @@ body
 
 
 .slide-2
-  background: image-url("bg-slide-02.jpg") center top #EDECED
+  background: image-url("bg-slide-02.jpg") center top $bg-green-2
   .wraper
     +grid-column(9, $center: true)
     padding: 4em 0
@@ -98,7 +100,7 @@ body
 
 
 .slide-4
-  background: image-url("bg-slide-04.jpg") center top
+  background: image-url("bg-slide-04.jpg") center top $bg-green-1
   h2, h3
     color: white
   h3
@@ -157,6 +159,10 @@ body
       +grid-column(8, $center: true)
 
 @media (max-width: 930px)
+  .slide-1, .slide-4
+    background: $bg-green-1
+  .slide-2
+    background: $bg-green-2
   .slide-1
     .form-wraper
       .disclaimer
