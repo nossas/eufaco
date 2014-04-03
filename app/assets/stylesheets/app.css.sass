@@ -110,11 +110,14 @@ body
     font-weight: bold
   .celebration
     +grid-column(4)
+    max-width: 342px
     text-align: left
     margin-bottom: 1em
     .image-wraper
-      +border-radius(3px 3px 0 0)
       position: relative
+      .image
+        img
+          +border-radius(3px 3px 0 0)
       [class^="icon-"]
         position: absolute
         top: 20px
@@ -127,7 +130,6 @@ body
         &:hover
           +box-shadow(0 0 10px rgba(0,0,0,0.5))
           opacity: 1.0
-
     .text
       +border-radius(0 0 3px 3px)
       background: white
@@ -215,10 +217,8 @@ body
 
   .slide-4
     .celebration
-      +grid-column(12)
+      +grid-column(12, $center: true)
       margin-bottom: 2em
-      &:last-child
-        margin: 0
 
   .slide-6
     .wraper
