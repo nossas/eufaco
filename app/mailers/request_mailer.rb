@@ -10,7 +10,7 @@ class RequestMailer < ActionMailer::Base
   def membership_card_requested request
     @user = request.user
     headers "X-SMTPAPI" => "{ \"category\": [\"eufaco\", \"membership_card_requested\"] }"
-    mail(subject: "Meu Rio Eu Faço - Solicitação de Carteirinha!")
+    mail(subject: "Meu Rio Eu Faço - Solicitação de Carteirinha!", from: "#{@user.first_name} #{@user.last_name} <#{@user.email}>")
   end
 
   def contact form
