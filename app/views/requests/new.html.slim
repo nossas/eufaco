@@ -25,7 +25,7 @@
       .form-wraper
         .row
           .disclaimer
-            | Já é nosso financiador ou conquistou a medalha "Eu Faço!"?
+            | Já é nosso financiador ou conquistou a medalha #{link_to '"Eu Faço!"', "#faq", id: 'view_faq', "data-reveal-id" => "faq", "data-reveal" => true}?
             br
             | Solicite agora mesmo a sua carteirinha e seja celebrado!
         = form_for @request, html: { "data-abide" => true } do |form|
@@ -50,6 +50,7 @@
     .wraper
       h2 Como funciona?
       p Participe do Faça Acontecer ou conquiste a medalha "Eu Faço!" no Multitude e seja festejado por nossos parceiros. Comece agora mesmo!
+      p Torne-se financiador com Faça Acontecer ou conquiste a medalha "Eu Faço!" no Multitude e seja festejado por nossos parceiros. Comece agora mesmo!  Clique #{link_to 'aqui', "#faq", "data-reveal-id" => "faq", "data-reveal" => true} para mais detalhes.
   .row
     .multitude
       .image= image_tag("multitude.png")
@@ -140,4 +141,8 @@
   p Agora que você já faz parte da festa, convide os seus amigos! Clique nos botões abaixo para compartilhar o link do Faça Acontecer e trazer mais financiadores para a nossa Rede. Juntos, vamos festejar um Rio cada vez mais lindo!
   = link_to "Compartilhe no Facebook", "https://www.facebook.com/sharer/sharer.php?u=#{URI::encode('http://bit.ly/eufacoacontecer')}", class: ["button", "facebook-share"]
   = link_to "Compartilhe no Twitter", "https://twitter.com/share?url=#{URI::encode('http://bit.ly/eufacoacontecer')}&text=#{URI::encode(t("share.twitter.tweet"))}", class: ["button", "twitter-share"]
+  a.close-reveal-modal &#215;
+
+#faq.medium.reveal-modal{data-reveal}
+  = render 'layouts/faq'
   a.close-reveal-modal &#215;

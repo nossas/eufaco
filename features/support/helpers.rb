@@ -18,6 +18,7 @@ def to_element string
   return ".contact-email-field.error" if string == "the contact email field error"
   return ".contact-subject-field.error" if string == "the contact subject field error"
   return ".contact-message-field.error" if string == "the contact message field error"
+  return "#faq" if string == "the FAQ page"
   raise "I don't know element '#{string}'"
 end
 
@@ -39,6 +40,7 @@ def to_button string
 end
 
 def to_link string
+  return "view_faq" if string == "view FAQ link"
   raise "I don't know '#{string}'"
 end
 
