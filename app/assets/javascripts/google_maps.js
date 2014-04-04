@@ -137,7 +137,7 @@ var features = [
     name: 'Brownie do Luiz',
     lat: -22.933444,
     lng: -43.184765,
-    type: 'desconto',
+    type: 'presente',
     content: contentBrownie
   },
 ];
